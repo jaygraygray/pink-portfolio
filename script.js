@@ -1,10 +1,10 @@
 function profileMargins() {
   let scrollDistance = $(window).scrollTop()
   let margins = 120 - (scrollDistance / 2)
-  if (margins > 28) {
+  if (margins > 56) {
     return margins
   } else {
-    return 28
+    return 56
   }
 }
 
@@ -38,6 +38,33 @@ function bioPosition() {
   }
 }
 
+function projectsPosition() {
+  let d = $(window).scrollTop() - 140
+  if (d > 150) {
+    return 150
+  } else {
+    return d
+  }
+}
+
+function skillsPosition() {
+  let d = $(window).scrollTop() - 140
+  if (d > 150) {
+    return 150
+  } else {
+    return d
+  }
+}
+
+function contactPosition() {
+  let d = $(window).scrollTop() + 20
+  if (d > 150) {
+    return 150
+  } else {
+    return d
+  }
+}
+
 $(document).ready(
   
   $(window).scroll(() => {
@@ -52,9 +79,17 @@ $(document).ready(
 
     $('.profile-box-img').css('opacity', reverseProfileOpacity())
   
-    $('.bio').css('opacity', bioOpacity())
+    $('.bio').css('opacity', bioOpacity()-.2)
     $('.bio').css('bottom', bioPosition())
 
+    $('.projects').css('opacity', bioOpacity())
+    $('.projects').css('right', projectsPosition())
+
+    $('.skills').css('opacity', bioOpacity())
+    $('.skills').css('right', skillsPosition())
+
+    $('.contact').css('opacity', bioOpacity())
+    $('.contact').css('right', contactPosition())
   })
 
 )

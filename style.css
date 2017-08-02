@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald|Raleway|Montserrat');
 
+@keyframes clipper {
+  from { clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%); }
+  to { clip-path: polygon(30% 0, 100% 0, 100% 100%, 7% 100%); }
+}
+
 html {
   overflow-y: scroll;
   overflow-x: hidden;
@@ -69,11 +74,11 @@ html {
 }
 
 .bio {
-  margin: 28px;
+  margin-bottom: 47px;
+  margin-left: 56px;
   border: 1px solid #cccccc;
   background: #fff;
   width: 506px;
-  opacity: 1;
   position: fixed;
   bottom: 0px;
   z-index: 1;
@@ -88,7 +93,6 @@ html {
 .body {
   background-color: rgb(247,84,85);
   width: 100%;
-  height: 200px;
 }
 
 .bio-tag {
@@ -113,11 +117,7 @@ html {
   align-items: center;
   display: flex;
   transition: all .2s;
-}
-
-.projects:hover {
-  transform: skewX(-30deg);
-  transition: all .2s;
+  opacity: 0;
 }
 
 .projects h1 {
@@ -127,6 +127,7 @@ html {
   z-index: 1;
   filter: saturate(2);
   text-shadow: 1px 1px 1px #fff;
+  transition: all .2s;
 }
 
 .projects-deco {
@@ -140,6 +141,23 @@ html {
     border-style: solid;
     border-color: #f6ebe2;
     border-width: 0 1px 0px 1px;
+    transition: all .2s;
+}
+
+.projects:hover {
+  animation: clipper .2s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.projects:hover .projects-deco {
+  -webkit-transition: all 0.2s ease-out;
+  position: absolute;
+  left: 79px;
+}
+
+.projects:hover h1 {
+  transition: all .2s ease-in;
+  margin-left: 96px;
 }
 
 .skills {
@@ -152,27 +170,6 @@ html {
   justify-content: center;
   align-items: center;
   display: flex;
-}
-
-@keyframes clipper {
-  from { clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%); }
-  to { clip-path: polygon(30% 0, 100% 0, 100% 100%, 7% 100%); }
-}
-
-.skills:hover {
-  animation: clipper .2s ease-out;
-  animation-fill-mode: forwards;
-}
-
-.skills:hover .skills-deco {
-  -webkit-transition: all 0.2s ease-out;
-  position: absolute;
-  left: 79px;
-}
-
-.skills:hover h1 {
-  transition: all .2s ease-in;
-  margin-left: 96px;
 }
 
 .skills h1 {
@@ -200,8 +197,21 @@ html {
   border-width: 0 1px 0px 1px;
 }
 
+.skills:hover {
+  animation: clipper .2s ease-out;
+  animation-fill-mode: forwards;
+}
 
+.skills:hover .skills-deco {
+  -webkit-transition: all 0.2s ease-out;
+  position: absolute;
+  left: 79px;
+}
 
+.skills:hover h1 {
+  transition: all .2s ease-in;
+  margin-left: 96px;
+}
 
 .contact {
   position: absolute;
@@ -213,6 +223,7 @@ html {
   justify-content: center;
   align-items: center;
   display: flex;
+  transition: all .2s ease-in
 }
 
 .contact h1 {
@@ -222,6 +233,7 @@ html {
   z-index: 1;
   filter: saturate(2);
   text-shadow: 1px 1px 1px #fff;
+  transition: all .2s ease-in
 }
 
 .contact-deco {
@@ -235,4 +247,21 @@ html {
   border-style: solid;
   border-color: #dfffdf;
   border-width: 0 1px 0px 1px;
+  transition: all .2s ease-in
+}
+
+.contact:hover {
+  animation: clipper .2s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.contact:hover .contact-deco {
+  -webkit-transition: all 0.2s ease-out;
+  position: absolute;
+  left: 79px;
+}
+
+.contact:hover h1 {
+  transition: all .2s ease-in;
+  margin-left: 96px;
 }
