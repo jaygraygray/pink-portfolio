@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway');
+
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.pink {
+  height: 148vh;
+  width: 100%;
+  margin-left: 272px;
+  transform: skewX(-30deg);
+  background: linear-gradient(to top, rgba(247,84,85,1) 1%,rgba(244,105,105,1) 48%,rgba(229,125,80,1) 100%);
+}
+
+.box {
+  margin-top: 120px;
+  margin-left: 120px;
+  width: 506px;
+  height: 228px;
+  border: 1px solid #cccccc;
+  position: fixed;
+  z-index: 1;
+  background: #fff;
+}
+
+.boxScrolled {
+  margin-top: 32px;
+  margin-left: 32px;
+  transition: all .3s;
+}
+
+.box h1 {
+  font-size: 75px;
+  margin: 24px;
+  letter-spacing: 9px;
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.box p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  background: linear-gradient(to right, rgba(252, 151, 152, .4) 1%,rgba(218, 91, 91, .4) 51%,rgba(230, 116, 67, .4) 100%);
+  color: white;
+  padding: 12px;
+  width: 75%;
+  margin: auto;
+  margin-top: 42px;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.profile {
+    width: 227px;
+    position: absolute;
+    right: 239px;
+    top: 121px;
+    z-index: 1;
+}
