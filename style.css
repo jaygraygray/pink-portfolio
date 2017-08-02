@@ -101,42 +101,9 @@ html {
   right: 20px;
 }
 
-.skills {
-  position: absolute;
-  right: 48px;
-  width: 420px;
-  height: 165px;
-  background: #87D2D2;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-.skills h1 {
-  font-size: 48px;
-  color: #329494;
-  font-family: 'Abril Fatface', cursive;
-  z-index: 1;
-  filter: saturate(2);
-  text-shadow: 1px 1px 1px #fff;
-}
-
-.skills-deco {
-  width: 30%;
-  height: 165px;
-  transform: skewX(-30deg);
-  background: #8edfdf;
-  position: absolute;
-  bottom: 0;
-  left: 233px;
-  border-style: solid;
-  border-color: #b4ffff;
-  border-width: 0 1px 0px 1px;
-}
-
 .projects {
   position: absolute;
-  bottom: -269px;
+  bottom: 127px;
   right: 48px;
   width: 420px;
   height: 165px;
@@ -145,6 +112,12 @@ html {
   justify-content: center;
   align-items: center;
   display: flex;
+  transition: all .2s;
+}
+
+.projects:hover {
+  transform: skewX(-30deg);
+  transition: all .2s;
 }
 
 .projects h1 {
@@ -157,14 +130,109 @@ html {
 }
 
 .projects-deco {
+    width: 30%;
+    height: 165px;
+    transform: skewX(-30deg);
+    background: #ffd8b8;
+    position: absolute;
+    bottom: 0px;
+    left: 233px;
+    border-style: solid;
+    border-color: #f6ebe2;
+    border-width: 0 1px 0px 1px;
+}
+
+.skills {
+  position: absolute;
+  bottom: -61px;
+  right: 48px;
+  width: 420px;
+  height: 165px;
+  background: #87D2D2;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+@keyframes clipper {
+  from { clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%); }
+  to { clip-path: polygon(30% 0, 100% 0, 100% 100%, 7% 100%); }
+}
+
+.skills:hover {
+  animation: clipper .2s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.skills:hover .skills-deco {
+  -webkit-transition: all 0.2s ease-out;
+  position: absolute;
+  left: 79px;
+}
+
+.skills:hover h1 {
+  transition: all .2s ease-in;
+  margin-left: 96px;
+}
+
+.skills h1 {
+  transition: all .2s ease-in;
+  font-size: 48px;
+  color: #329494;
+  font-family: 'Abril Fatface', cursive;
+  z-index: 1;
+  filter: saturate(2);
+  text-shadow: 1px 1px 1px #fff;
+}
+
+
+.skills-deco {
+  transition: all .3s;
   width: 30%;
   height: 165px;
   transform: skewX(-30deg);
-  background: #ffc18d;
+  background: #8edfdf;
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   left: 233px;
   border-style: solid;
-  border-color: #ffe3cc;
+  border-color: #b4ffff;
+  border-width: 0 1px 0px 1px;
+}
+
+
+
+
+.contact {
+  position: absolute;
+  bottom: -255px;
+  right: 48px;
+  width: 420px;
+  height: 165px;
+  background: #96E896;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.contact h1 {
+  font-size: 48px;
+  color: #0F910F;
+  font-family: 'Abril Fatface', cursive;
+  z-index: 1;
+  filter: saturate(2);
+  text-shadow: 1px 1px 1px #fff;
+}
+
+.contact-deco {
+  width: 30%;
+  height: 165px;
+  transform: skewX(-30deg);
+  background: #a9ffa9;;
+  position: absolute;
+  bottom: 0;
+  left: 233px;
+  border-style: solid;
+  border-color: #dfffdf;
   border-width: 0 1px 0px 1px;
 }
