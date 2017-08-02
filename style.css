@@ -22,12 +22,7 @@ html {
   position: fixed;
   z-index: 1;
   background: #fff;
-}
 
-.boxScrolled {
-  margin-top: 32px;
-  margin-left: 32px;
-  transition: all .3s;
 }
 
 .box h1 {
@@ -47,8 +42,15 @@ html {
   padding: 12px;
   width: 75%;
   margin: auto;
-  margin-top: 42px;
+  margin-top: 24px;
   text-shadow: 1px 1px 1px #000;
+}
+
+.box-title {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: space-around;
 }
 
 .profile {
@@ -57,4 +59,12 @@ html {
     right: 239px;
     top: 121px;
     z-index: 1;
+}
+
+.profile-box-img {
+  margin-top: 18px;
+  margin-left: 127px;
+  width: 84px;
+  opacity: 0;
+  position: absolute;
 }
