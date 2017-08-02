@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway|Montserrat');
 
 html {
   overflow-y: scroll;
@@ -22,7 +22,6 @@ html {
   position: fixed;
   z-index: 1;
   background: #fff;
-
 }
 
 .box h1 {
@@ -64,7 +63,31 @@ html {
 .profile-box-img {
   margin-top: 18px;
   margin-left: 127px;
-  width: 84px;
+  width: 85px;
   opacity: 0;
   position: absolute;
 }
+
+.bio {
+  margin: 28px;
+  border: 1px solid #cccccc;
+  background: #fff;
+  width: 506px;
+  opacity: 1;
+  position: fixed;
+  bottom: 0px;
+  z-index: 1;
+}
+
+.bio p  {
+  padding: 24px;
+  margin-bottom: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+
+.body {
+  background-color: rgb(247,84,85);
+  width: 100%;
+}
+

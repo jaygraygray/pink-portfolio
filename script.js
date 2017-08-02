@@ -13,19 +13,30 @@ function profileOpacity() {
 }
 
 function reverseProfileOpacity() {
-  return ($(window).scrollTop() * .003)
+  return ($(window).scrollTop() * .007)
 }
 
 function profileH1Margin() {
  let d = $(window).scrollTop() / 2
- if (d > 30) {
-   return d
+ if (d > 135) {
+   return 135
  } else {
-   return 30
+   return d
  }
 }
 
+function bioOpacity() {
+  return ($(window).scrollTop() * .007)
+}
 
+function bioPosition() {
+  let d = $(window).scrollTop() - 296
+  if (d > 10) {
+    return 10
+  } else {
+    return d
+  }
+}
 
 $(document).ready(
   
@@ -41,6 +52,8 @@ $(document).ready(
 
     $('.profile-box-img').css('opacity', reverseProfileOpacity())
   
+    $('.bio').css('opacity', bioOpacity())
+    $('.bio').css('bottom', bioPosition())
 
   })
 
