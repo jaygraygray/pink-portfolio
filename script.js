@@ -38,15 +38,6 @@ function bioPosition() {
   }
 }
 
-function projectsPosition() {
-  let d = $(window).scrollTop() - 140
-  if (d > 150) {
-    return 150
-  } else {
-    return d
-  }
-}
-
 function skillsPosition() {
   let d = $(window).scrollTop() - 140
   if (d > 150) {
@@ -56,8 +47,8 @@ function skillsPosition() {
   }
 }
 
-function contactPosition() {
-  let d = $(window).scrollTop() - 100
+function projectsPosition() {
+  let d = $(window).scrollTop() - 140
   if (d > 150) {
     return 150
   } else {
@@ -65,31 +56,53 @@ function contactPosition() {
   }
 }
 
+
+function contactPosition() {
+  let d = $(window).scrollTop() - 140
+  if (d > 150) {
+    return 150
+  } else {
+    return d
+  }
+}
+
+const box = $('.box')
+      profile = $('.profile')
+      boxH1 = $('.box-title > h1')
+      profileBoxImg = $('.profile-box-img')
+      bio = $('.bio')
+      projects = $('.projects')
+      skills = $('.skills')
+      contact = $('.contact')
 $(document).ready(
   
+  
+
   $(window).scroll(() => {
 
-    $('.box').css('margin-top', profileMargins())
-    $('.box').css('margin-left', profileMargins())
+    box.css('margin-top', profileMargins())
+    box.css('margin-left', profileMargins())
 
-    $('.profile').css('opacity', profileOpacity())
-    $('.profile').css('top', profileMargins())
+    profile.css('opacity', profileOpacity())
+    profile.css('top', profileMargins())
 
-    $('.box-title > h1').css('margin-right', profileH1Margin())
+    boxH1.css('margin-right', profileH1Margin())
 
-    $('.profile-box-img').css('opacity', reverseProfileOpacity())
+    profileBoxImg.css('opacity', reverseProfileOpacity())
   
-    $('.bio').css('opacity', bioOpacity()-.2)
-    $('.bio').css('bottom', bioPosition())
+    bio.css('opacity', bioOpacity()-.2)
+    bio.css('bottom', bioPosition())
 
-    $('.projects').css('opacity', bioOpacity())
-    $('.projects').css('right', projectsPosition())
+    projects.css('opacity', bioOpacity())
+    projects.css('right', projectsPosition())
 
-    $('.skills').css('opacity', bioOpacity())
-    $('.skills').css('right', skillsPosition())
+    skills.css('opacity', bioOpacity())
+    skills.css('right', skillsPosition())
 
-    $('.contact').css('opacity', bioOpacity())
-    $('.contact').css('right', contactPosition())
+    contact.css('opacity', bioOpacity())
+    contact.css('right', contactPosition())
+
+  
   })
 
 )

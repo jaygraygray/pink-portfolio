@@ -82,6 +82,7 @@ html {
   position: fixed;
   bottom: 0px;
   z-index: 1;
+  opacity: 0;
 }
 
 .bio p  {
@@ -170,6 +171,7 @@ html {
   justify-content: center;
   align-items: center;
   display: flex;
+  opacity: 0;
 }
 
 .skills h1 {
@@ -240,8 +242,8 @@ html {
   width: 30%;
   height: 165px;
   transform: skewX(-30deg);
-  background: #a9ffa9;;
-  position: absolute;
+  background: #a9ffa9;
+    position: absolute;
   bottom: 0;
   left: 233px;
   border-style: solid;
@@ -264,4 +266,91 @@ html {
 .contact:hover h1 {
   transition: all .2s ease-in;
   margin-left: 96px;
+}
+
+.skills-section {
+  background: #87D2D2;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.skills-section-deco {
+  position: absolute;
+  top: 0;
+  left: 353px;
+  height: 100vh;
+  width: 60%;
+  transform: skewX(-30deg);
+  background: #a6f5f5;
+}
+
+.skills-label {
+  z-index: 1;
+  position: absolute;
+  left: 846px;
+  top: 200px;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 173px;
+  color: #87d2d2;
+  transform: rotate(-60deg);
+  letter-spacing: 16px;
+}
+
+.projects-section {
+  background: #FFCEA5;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.projects-section-deco {
+  position: absolute;
+  top: 0;
+  left: 353px;
+  height: 100vh;
+  width: 60%;
+  transform: skewX(-30deg);
+  background: #ffd8b8;
+}
+
+.projects-label {
+  z-index: 1;
+  position: absolute;
+  left: 821px;
+  top: 200px;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 133px;
+  color: #FFCEA5;
+  transform: rotate(-60deg);
+  letter-spacing: 16px;
+}
+
+.contact-section {
+  background: #96E896;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.contact-section-deco {
+  position: absolute;
+  top: 0;
+  left: 353px;
+  height: 100vh;
+  width: 60%;
+  transform: skewX(-30deg);
+  background: #a9ffa9;
+}
+
+.contact-label {
+  z-index: 1;
+  position: absolute;
+  left: 848px;
+  top: 200px;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 133px;
+  color: #96E896;
+  transform: rotate(-60deg);
+  letter-spacing: 16px;
 }
