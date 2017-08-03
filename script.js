@@ -57,7 +57,7 @@ function skillsPosition() {
 }
 
 function contactPosition() {
-  let d = $(window).scrollTop() + 20
+  let d = $(window).scrollTop() - 100
   if (d > 150) {
     return 150
   } else {

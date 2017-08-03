@@ -107,7 +107,7 @@ html {
 
 .projects {
   position: absolute;
-  bottom: 127px;
+  bottom: -61px;
   right: 48px;
   width: 420px;
   height: 165px;
@@ -162,7 +162,7 @@ html {
 
 .skills {
   position: absolute;
-  bottom: -61px;
+  bottom: 127px;
   right: 48px;
   width: 420px;
   height: 165px;
