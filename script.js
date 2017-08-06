@@ -30,9 +30,9 @@ function bioOpacity() {
 }
 
 function bioPosition() {
-  let d = $(window).scrollTop() - 296
-  if (d > 10) {
-    return 10
+  let d = $(window).scrollTop() - 275
+  if (d > -29) {
+    return -29
   } else {
     return d
   }
@@ -74,8 +74,14 @@ const box = $('.box')
       projects = $('.projects')
       skills = $('.skills')
       contact = $('.contact')
+
+$('.modal-trigger').click(function() {
+  $('.ui basic modal').modal('show')
+})
+
+
+
 $(document).ready(
-  
   
 
   $(window).scroll(() => {

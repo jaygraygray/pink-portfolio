@@ -7,6 +7,9 @@
   <title>JGray</title>
   <link rel="stylesheet" href="reset.css" />
   <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
 </head>
 <body>
   <div class="box" id="box">
@@ -24,7 +27,8 @@
     
     <div class="bio">
       <div class="bio-tag">bio</div>
-      <p>After five years in education, I jumped ship and became a software engineer. </p>
+      <p>Hi! I'm a web developer and curriculum developer at a coding bootcamp, and am 
+        currently interested in opportunities in the Boston area. </p>
       
       <p>I thrive on solving all manner of complex problems, from UX stories to 
          logical or organizational challenges, and everything in between.
@@ -65,38 +69,117 @@
   <div class="skills-section" id="skills">
     <p class="skills-label">skills</p>
     <div class="skills-section-deco">&nbsp;</div>
-    <!--
-      bootstrap
-      express
-      git
-      gulp
-      css3
-      html5
-      javascript
-      jquery
-      nodejs
-      mysql
-      postgresql
-      react
-      sass
-      trello
-      slack
-      visualstudio
-      -->
+    <div class="skills-content">
+
+      <div class="icon">
+        <i class="devicon-react-plain"></i>
+        <p class="react icon-text">ReactJS</p>
+      </div>
+
+      <div class="icon">
+        <i class="devicon-javascript-plain"></i>
+        <p class="javascript icon-text">JavaScript</p>
+      </div>
+
+      <div class="icon">
+        <i class="devicon-css3-plain"></i>
+        <p class="css icon-text">CSS3</p>
+      </div>
+
+      <div class="icon">
+        <i class="devicon-html5-plain"></i>
+        <p class="html icon-text">HTML5</p>
+      </div>
+
+      <div class="icon">
+        <i class="devicon-bootstrap-plain"></i>
+        <p class="bootstrap icon-text">Bootstrap</p>
+      </div>
+
+      <div class="icon">
+        <i class="devicon-nodejs-plain"></i>
+        <p class="node icon-text">NodeJS</p>
+      </div>
+
+      <div class="icon">
+        <i class="devicon-express-original"></i>
+        <p class="express icon-text">Express</p>
+      </div>
+        
+      <div class="icon">
+        <i class="devicon-git-plain"></i>
+        <p class="git icon-text">Git</p>
+      </div>
+        
+      <div class="icon">
+        <i class="devicon-gulp-plain"></i>
+        <p class="gulp icon-text">Gulp</p>
+      </div>
+        
+      <div class="icon">
+        <i class="devicon-jquery-plain"></i>
+        <p class="jquery icon-text">jQuery</p>
+      </div>
+      
+        
+      <div class="icon">
+        <i class="devicon-postgresql-plain"></i>
+        <p class="sql icon-text">PostgreSQL</p>
+      </div>
+      
+      
+      <div class="icon">
+        <i class="devicon-sass-plain"></i>
+        <p class="sass icon-text">Sass</p>
+      </div>
+
+    </div>
   </div>
 
   <div class="projects-section" id="projects">
     <p class="projects-label">projects</p>
     <div class="projects-section-deco">&nbsp;</div>
+    <div class="project-container" data-toggle="modal" data-target="#portal">
+      <h1>Housing Portal</h1>
+      <p>Created business solution for managing students and properties.</p>
+    </div>
+
   </div>
+
+<div class="modal fade" id="portal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Housing Portal</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+          <p>I lead a team of four through crafting a business solution currently in use by three DevMountain campuses. The housing portal allows administrators to manage student residents as well as associated properties.</p>
+          <p>Administrators can add students, create 'cohorts' (groups that students are organized into), manage other administrators, as well as manage entire properties on different campuses.</p>
+          <p>A complex filtering system for students allows admins to selectively view any combination of students, as well as make any necessary changes to student info.</p>
+          <p>Most importantly, admins are able to drag and drop students who need housing into open rooms, thus removing the need to rely on Excel spreadsheets and to manage hundreds of students across nationwide campuses.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
 
   <div class="contact-section" id="contact">
     <p class="contact-label">contact</p>
     <div class="contact-section-deco">&nbsp;</div>
   </div>
 
-<script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 <script src="script.js"></script>
-  
+
 </body>
 </html>
+
+

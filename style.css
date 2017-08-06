@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald|Raleway|Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Anonymous+Pro|Abril+Fatface|Oswald|Raleway|Montserrat');
 
 @keyframes clipper {
   from { clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%); }
@@ -74,9 +74,12 @@ html {
 }
 
 .bio {
-  margin-bottom: 47px;
+    height: 296px;
+  margin-bottom: 88px;
   margin-left: 56px;
-  border: 1px solid #cccccc;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: #cccccc;
   background: #fff;
   width: 506px;
   position: fixed;
@@ -86,9 +89,9 @@ html {
 }
 
 .bio p  {
-  padding: 24px;
+  padding: 12px 24px 12px 24px;
   font-family: 'Raleway', sans-serif;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .body {
@@ -100,10 +103,10 @@ html {
   font-family: 'Abril Fatface', cursive;
   font-size: 188px;
   color: #787878;
-  opacity: .2;
+  opacity: 0.3;
   position: absolute;
-  bottom: 0;
-  right: 20px;
+  bottom: -62px;
+  right: 2px;
 }
 
 .projects {
@@ -297,6 +300,49 @@ html {
   letter-spacing: 16px;
 }
 
+.skills-content {
+  z-index: 2;
+  color: #fff;
+  width: 40%;
+  position: absolute;
+  top: 40px;
+  left: 701px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.icon {
+  width: 93px;
+  margin: 46px 10px;
+  font-size: 56px;
+  position: relative;
+  text-shadow: 2px 2px 7px #000;
+  transition: all .2s;
+  text-align: center;
+}
+
+.icon-text {
+  position: absolute;
+  
+  font-size: 18px;
+  font-family: 'Anonymous Pro', monospace;
+  text-shadow: 1px 1px 2px #000;
+  margin-top: 19px;
+  transition: all .2s;
+}
+
+.icon:hover {
+  text-shadow: 1px 1px 3px #000;
+  transition: all .2s;
+}
+
+.icon:hover .icon-text {
+  margin-top: 12px;
+  transition: all .2s;
+  text-shadow: 1px 1px 1px #000;
+} 
+
 .projects-section {
   background: #FFCEA5;
   width: 100%;
@@ -353,4 +399,69 @@ html {
   color: #96E896;
   transform: rotate(-60deg);
   letter-spacing: 16px;
+}
+
+.javascript {
+  padding-right: 12px;
+}
+
+.react {
+  padding-left: 13px;
+}
+
+.css {
+  padding-left: 25px;
+}
+
+.html {
+  padding-left: 21px;
+}
+
+.bootstrap {
+  padding-left: 3px;
+}
+
+.node {
+  padding-left: 17px;
+}
+
+.express {
+  padding-left: 13px;
+}
+
+.git {
+  padding-left: 31px;
+}
+
+.gulp {
+  padding-left: 27px;
+}
+
+.jquery {
+  padding-left: 15px;
+}
+
+.sass {
+  padding-left: 23px;
+}
+
+.project-container {
+  width: 48%;
+  padding: 36px;
+  border: 1px solid #cccccc;
+  position: absolute;
+  top: 45px;
+  right: 48px;
+  background: #fff;
+}
+
+.project-container h1 {
+  font-family: 'Josefin Slab', serif;
+  margin: 0 !important;;
+  padding: 0 !important;;
+}
+
+.project-container p {
+  margin: 0;
+  padding: 0;
 }
