@@ -12,6 +12,7 @@
 
 </head>
 <body>
+<div class="body-container">
   <div class="box" id="box">
     <div class="box-title">
       <h1>JGray</h1>
@@ -22,7 +23,9 @@
 
   <img src="img/profile-circle-trans.png" class="profile"/>
   <div class="pink"></div>
-
+  <!-- <div class="scroll">
+    <h1>Scroll \/</h1>
+  </div> -->
   <div class="body">
     
     <div class="bio">
@@ -139,7 +142,8 @@
   <div class="projects-section" id="projects">
     <p class="projects-label">projects</p>
     <div class="projects-section-deco">&nbsp;</div>
-    <div class="project-container housing" data-toggle="modal" data-target="#portal">
+
+    <a href="#projects" class="project-container housing" data-toggle="modal" data-target="#portal">
       <h3>Housing Portal</h3>
       <p>Created business solution for managing students and properties.</p>
       <div class="housing-tech tech">
@@ -151,9 +155,9 @@
           <i class="devicon-postgresql-plain"></i>
           <i class="devicon-bootstrap-plain"></i>
       </div>
-    </div>
+    </a>
 
-    <div class="project-container medium" data-toggle="modal" data-target="#medium">
+    <a href="#projects" class="project-container medium" data-toggle="modal" data-target="#medium">
       <h3>Medium.com Clone</h3>
       <p>A fully functional text editor with article browsing and tagging functionality.</p>
       <div class="medium-tech tech">
@@ -165,7 +169,7 @@
           <i class="devicon-postgresql-plain"></i>
           <i class="devicon-bootstrap-plain"></i>
       </div>
-    </div>
+    </a>
 
     <a href="https://github.com/jaygraygray/full-stack-react-sample" class="project-container sample" data-toggle="modal" data-target="#sample">
       <h3>Full Stack React Sample App</h3>
@@ -237,8 +241,13 @@
   <div class="contact-section" id="contact">
     <p class="contact-label">contact</p>
     <div class="contact-section-deco">&nbsp;</div>
+    <div class="contact-content">
+      <a href="https://github.com/jaygraygray"><img src="img/github.svg" class="github" /></a>
+      <a href="https://www.linkedin.com/in/jeremy-lee-gray/"><img src="img/linkedin.svg" class="li"  /> <br/>
+      <a href="mailto:jeremygray001@gmail.com"><img src="img/gmail.svg" class="gmail"  /></a>
+    </div>
   </div>
-
+</div>
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>

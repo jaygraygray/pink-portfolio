@@ -10,12 +10,32 @@ html {
   overflow-x: hidden;
 }
 
+.body-container {
+  height: 638px;
+  width: 1366px;
+  margin: auto;
+  padding: 0;
+}
+
 .pink {
   height: 148vh;
   width: 100%;
   margin-left: 272px;
   transform: skewX(-30deg);
   background: linear-gradient(to top, rgba(247,84,85,1) 1%,rgba(244,105,105,1) 48%,rgba(229,125,80,1) 100%);
+}
+
+.scroll {
+  width: 49%;
+  background: #fff;
+  position: absolute;
+  right: 44px;
+  top: 447px;
+  z-index: 3;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .box {
@@ -535,5 +555,59 @@ html {
   transition: all .2s
 }
 
+
+.contact-content {
+  width: 40%;
+  position: absolute;
+  top: 163px;
+  right: 20px;
+  z-index: 2;
+}
+
+.github {
+  width: 128px;
+  position: absolute;
+  top: 180px;
+  right: 161px;
+  transition: all .2s;
+}
+
+.github:hover {
+  width: 204px;
+  top: 148px;
+  width: 204px;
+  right: 123px;
+  transition: all .2s;
+}
+
+.li {
+  width: 128px;
+  position: absolute;
+  top: 0;
+  right: 321px;
+  transition: all .2s;
+}
+
+.li:hover {
+  width: 204px;
+  top: -38px;
+  right: 283px;
+  transition: all .2s;
+}
+
+.gmail {
+  width: 128px;
+  position: absolute;
+  top: 180px;
+  right: 487px;
+  transition: all .2s;
+}
+
+.gmail:hover {
+  width: 204px;
+  transition: all .2s;
+  top: 142px;
+  right: 459px;
+}
 
 
