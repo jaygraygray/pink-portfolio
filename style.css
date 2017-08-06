@@ -10,11 +10,26 @@ html {
   overflow-x: hidden;
 }
 
-.body-container {
-  height: 638px;
-  width: 1366px;
+/* .body-container {
+  height: 638px !important;
+  width: 1366px !important;
   margin: auto;
   padding: 0;
+  position: relative;
+} */
+
+.warning {
+  border-radius: 8px;
+  color: #000;
+  background: #fff;
+  opacity: .7;
+  padding: 12px;
+  margin: 12px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-family: 'Raleway';
+  font-size: 12px;
 }
 
 .pink {
