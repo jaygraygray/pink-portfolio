@@ -446,16 +446,24 @@ html {
 }
 
 .project-container {
+  z-index: 2;
+  opacity: .5;
   width: 48%;
-  padding: 36px;
+  padding: 37px;
   border: 1px solid #cccccc;
-  position: absolute;
-  top: 45px;
-  right: 48px;
   background: #fff;
+  transition: all .2s
 }
 
-.project-container h1 {
+.project-container:hover {
+  opacity: 1;
+  padding: 42px 0px 42px 56px;
+  z-index: 3;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+.project-container h3 {
   font-family: 'Josefin Slab', serif;
   margin: 0 !important;;
   padding: 0 !important;;
@@ -464,4 +472,54 @@ html {
 .project-container p {
   margin: 0;
   padding: 0;
+}
+
+.housing {
+  position: absolute;
+  top: 60px;
+  right: 48px;
+}
+
+.medium {
+  position: absolute;
+  top: 189px;
+  right: 48px;
+}
+
+.sample {
+  position: absolute;
+  top: 318px;
+  right: 48px;
+}
+
+.snippets {
+  position: absolute;
+  top: 447px;
+  right: 48px;
+}
+
+.modal-body ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.modal-body {
+  font-family: 'Raleway';
+}
+
+.housing-tech {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  right: 17px;
+  font-size: 52px;
+  color: #d1d1d1;
+  transition: all .2s;
+}
+
+.housing:hover .housing-tech {
+  color: #000;
+  top: 6px;
+  transition: all .2s
 }
