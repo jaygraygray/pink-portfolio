@@ -452,7 +452,9 @@ html {
   padding: 37px;
   border: 1px solid #cccccc;
   background: #fff;
-  transition: all .2s
+  transition: all .2s;
+  text-decoration: none;
+  color: #000;
 }
 
 .project-container:hover {
@@ -461,6 +463,8 @@ html {
   z-index: 3;
   transition: all .2s;
   cursor: pointer;
+  text-decoration: none;
+  color: #000;
 }
 
 .project-container h3 {
@@ -508,18 +512,28 @@ html {
   font-family: 'Raleway';
 }
 
-.housing-tech {
-  z-index: 3;
+.tech {
+  z-index: 1;
   position: absolute;
   top: 0;
   right: 17px;
-  font-size: 52px;
+  font-size: 42px;
   color: #d1d1d1;
   transition: all .2s;
 }
 
-.housing:hover .housing-tech {
+ .housing:hover 
+.housing-tech, 
+.medium:hover
+.medium-tech, 
+.sample:hover
+.sample-tech,
+.snippets:hover
+.snippets-tech {
   color: #000;
   top: 6px;
   transition: all .2s
 }
+
+
+
