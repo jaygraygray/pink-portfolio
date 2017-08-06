@@ -511,6 +511,16 @@ html {
   color: #000;
 }
 
+.project-container:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+.project-container:active {
+  text-decoration: none;
+  color: #000;
+}
+
 .project-container h3 {
   font-family: 'Josefin Slab', serif;
   margin: 0 !important;;
@@ -523,21 +533,24 @@ html {
 }
 
 .housing {
+  width: 400px;
   position: absolute;
-  top: 60px;
-  right: 48px;
+  top: 183px;
+  right: 181px;
 }
 
 .medium {
+  width: 400px;
   position: absolute;
-  top: 189px;
-  right: 48px;
+  top: 312px;
+  right: 181px;
 }
 
 .sample {
+  width: 400px;
   position: absolute;
   top: 318px;
-  right: 48px;
+  right: 181px;
 }
 
 .snippets {
