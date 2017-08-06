@@ -36,18 +36,19 @@ html {
     justify-content: space-around;
     align-items: center;
     animation: scroll-arrow 1.5s ease infinite;
-    letter-spacing: -1px;
+    letter-spacing: -2px;
+    filter: blur(2px);
 }
 
 @keyframes scroll-arrow {
-  from { opacity: 0; top: 350px; }
-  to {  opacity: 1; top: 450px; }
+  from { opacity: 0; top: 400px; }
+  to {  opacity: .7; top: 500px; }
 }
 
 .title{
   color: #fff;
   position: absolute;
-
+  font-size: 12px;
 }
 
 .box {

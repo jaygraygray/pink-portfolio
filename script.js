@@ -91,7 +91,9 @@ const box = $('.box')
       medium = $('.medium')
       sample = $('.sample')
       snippets = $('.snippets')
-
+      github = $('.github')
+      li = $('.li')
+      gmail = $('.gmail')
 
 $(document).ready( function() {
 
@@ -174,7 +176,7 @@ $(document).ready( function() {
       'right': projectTransform(1458, 48, 181),
       'width' : projectTransform(1458, 657, 400)
     }) 
-    
+
   })
 
 })
