@@ -1,3 +1,4 @@
+
 function profileMargins() {
   let scrollDistance = $(window).scrollTop()
   let margins = 120 - (scrollDistance / 2)
@@ -66,6 +67,9 @@ function contactPosition() {
   }
 }
 
+
+
+
 const box = $('.box')
       profile = $('.profile')
       boxH1 = $('.box-title > h1')
@@ -75,16 +79,19 @@ const box = $('.box')
       skills = $('.skills')
       contact = $('.contact')
 
-$('.modal-trigger').click(function() {
-  $('.ui basic modal').modal('show')
-})
 
 
+$(document).ready( function() {
 
-$(document).ready(
-  
 
   $(window).scroll(() => {
+    if ($(window).scrollTop() > 1) {
+      $('.scroll').css({
+        'animation': 'none',
+        'opacity': 0
+      })
+    }
+    
 
     box.css('margin-top', profileMargins())
     box.css('margin-left', profileMargins())
@@ -108,7 +115,31 @@ $(document).ready(
     contact.css('opacity', bioOpacity())
     contact.css('right', contactPosition())
 
+    if (window.pageYOffset >= 490) {
+      // trigger skills display
+      console.log('triggs')
+        let kids = $('.skills-content').children()
+          .each( function(i) {
+            delay = (i) * 100;
+            setTimeout(function(div) {
+              div.show().addClass('icon-end')
+            }, delay, $(this))
+        })
+    }
+
+    if (window.pageYOffset <= 600) {
+      // trigger skills display
+      console.log('triggs')
+        let kids = $('.skills-content').children()
+          .each( function(i) {
+            delay = (i) * 100;
+            setTimeout(function(div) {
+              div.show().removeClass('icon-end')
+              div.show().addClass('icon-start')
+            }, delay, $(this))
+        })
+    }
   
   })
 
-)
+})

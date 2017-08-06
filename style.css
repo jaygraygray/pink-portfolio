@@ -26,16 +26,28 @@ html {
 }
 
 .scroll {
-  width: 49%;
-  background: #fff;
+    width: 49%;
+    position: absolute;
+    right: 26px;
+    top: 447px;
+    z-index: 3;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation: scroll-arrow 1.5s ease infinite;
+    letter-spacing: -1px;
+}
+
+@keyframes scroll-arrow {
+  from { opacity: 0; top: 350px; }
+  to {  opacity: 1; top: 450px; }
+}
+
+.title{
+  color: #fff;
   position: absolute;
-  right: 44px;
-  top: 447px;
-  z-index: 3;
-  height: 100px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+
 }
 
 .box {
@@ -332,15 +344,27 @@ html {
   justify-content: space-around;
 }
 
-.icon {
+.icon-start{
+  width: 0;
+  opacity: 0;
+}
+
+.icon-end {
   width: 93px;
+  opacity: 1;
+  transition: all .2s; 
+}
+
+.icon {
+  width: 100px;
   margin: 46px 10px;
   font-size: 56px;
   position: relative;
   text-shadow: 2px 2px 7px #000;
-  transition: all .2s;
   text-align: center;
+   transition: all .2s; 
 }
+
 
 .icon-text {
   position: absolute;
